@@ -1,9 +1,9 @@
-from graph.graph import SymmetricGroup
-from graph.graph import DihedralGroup
+from Group.group import SymmetricGroup
+from Group.group import DihedralGroup
 
 if __name__ == "__main__":
-    symmetric_group_3 = SymmetricGroup(3)
-    dihedral_group_4 = DihedralGroup(4)
+    H = SymmetricGroup(3)
+    G = DihedralGroup(6)
 
-    print("Symmetric Group S_3:", symmetric_group_3.list())
-    print("Dihedral Group D_4:", dihedral_group_4.list())
+    print(G.list())
+
